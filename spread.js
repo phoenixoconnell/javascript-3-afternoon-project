@@ -17,6 +17,8 @@ let product = {
   imageUrl: 'https://i.ebayimg.com/images/g/9T4AAOSwbmdZf2jN/s-l640.jpg'
 }
 
+let productCopy = {...product}
+
 // code here
 
 
@@ -28,6 +30,8 @@ let product = {
 
 let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
+let colorsCopy = [...colors]
+
 // code here
 
 
@@ -35,7 +39,8 @@ let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 ////////// PROBLEM 3 //////////
 
-/* Here we have an array with 3 numbers, and a function that takes in 3 numbers as arguments.  Invoke addNums, and use the spread operator to pass in the numbers from the numbers array; and store the value to a variable named result */
+/* Here we have an array with 3 numbers, and a function that takes in 3 numbers as arguments.  Invoke addNums, and use the spread operator to pass in the numbers from the numbers array; and 
+store the value to a variable named result */
 
 let numbers = [4, 6, 10];
 

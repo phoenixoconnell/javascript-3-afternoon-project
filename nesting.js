@@ -50,6 +50,18 @@ var employees = [
     3. Return the updated employee array.
 */
 
+function employeeUpdater() {
+  for(let key in employees) {
+    if(employees[key].firstName == "Lorie") {
+      employees[key].department = "HR"
+    }
+    if(employees[key].firstName == "Theo") {
+      delete employees[key];
+    } 
+  }
+  return employees
+}
+
 //Code Here
 
 
@@ -67,6 +79,27 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
     2. Use nested for loops to check for duplicate numbers, and then remove the duplicates from the array.
     3. Return the updated array.
 */
+
+function removeDuplicates() {
+  for(let accident in workplaceAccidents) {
+    let count = 0;
+    for(let accident2 in workplaceAccidents) {
+      if(workplaceAccidents[accident] == workplaceAccidents[accident2]) {
+        count++;
+      }
+      if(count > 1) {
+        delete workplaceAccidents[accident];
+      }
+    }
+  }
+  return workplaceAccidents.filter(accident => {
+    if(accident) {
+      return true
+    } else {
+      return false
+    }
+  })
+}
 
 //Code Here
 

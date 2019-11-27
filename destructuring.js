@@ -21,6 +21,8 @@ var carDetails = {
   Use object destructuring to save the property values from the object carDetails into new variables. 
 */
 
+var {color,make,model,year} = carDetails
+
 //Code Here
 
 
@@ -35,7 +37,9 @@ var carDetails = {
 
 function greeting( obj ) {
   //Code Here
-  
+ 
+  var {firstName,lastName,title} = obj
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -52,6 +56,12 @@ function greeting( obj ) {
   Use object destructuring to save the property values to new variables.
   Sum up the values and return the total number.
 */
+
+var totalPopulation = (obj) => {
+  var {utah,california,texas,arizona} = obj;
+  var total = utah + california + texas + arizona
+  return total
+}
 
 //Code Here
 
